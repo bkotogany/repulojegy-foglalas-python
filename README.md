@@ -13,7 +13,7 @@ Egyszerű, konzolos repülőjegy foglaló alkalmazás az alábbi követelmények
 
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 python -m pip install --upgrade pip
 python main.py
 ```
@@ -26,7 +26,7 @@ python main.py
 - `models.py` – osztályok és domén logika
 - `data_seed.py` – induló adatok létrehozása
 - `exceptions.py` – egyedi kivételek
-- `adatok.txt` – **TÖLTSD KI SAJÁT ADATAIDDAL** (név, szak, Neptun, képzés típusa)
+- `adatok.txt` – saját adatok
 
 ## GitHub feltöltés
 
@@ -44,8 +44,6 @@ python main.py
 
 ## Tesztelés gyorsan
 
-Indítás után a menüben már találsz 3 járatot és 6 foglalást. Például:
+Indítás után a menüben található 3 járat és 6 foglalás. Például:
 - Új foglalás: válassz járatot sorszám alapján, add meg nevet és dátumot (YYYY-MM-DD). 
 - Lemondás: add meg a foglalás azonosítóját (pl. `RSV-0003`).
-
-Jó munkát!
