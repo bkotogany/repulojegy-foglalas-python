@@ -68,7 +68,7 @@ class Jarat(ABC):
         return f"{self._jaratszam} -> {self._celallomas} | alapár: {self._jegyar:.0f} Ft | férőhely: {self._ferohely} | {status}"
 
     def __repr__(self):
-        return f"Jarat({self._jaratszam!r}, {self._celallomas!r}, {self._jegyar!r}, {self._ferohely!r})"
+        return f"Járat({self._jaratszam!r}, {self._celallomas!r}, {self._jegyar!r}, {self._ferohely!r})"
 
 
 class BelfoldiJarat(Jarat):
@@ -103,7 +103,7 @@ class JegyFoglalas:
     def __str__(self):
         return f"{self.azonosito} | {self.utas_nev} | {self.jarat.jaratszam} -> {self.jarat.celallomas} | {self.utazas_napja.isoformat()} | {self.ar:.0f} Ft"
 
-    def __len.me__(self):  # deliberately unused, but example of extra dunder could be __hash__ or eq (dataclass fournished)
+    def __len__(self):  #  példa len() használatára
         return 1
 
 
